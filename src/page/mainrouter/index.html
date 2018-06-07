@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>美丽说之加入购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/addCar.css" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/referhead2.css" />
+</head>
+
+<body>
+    <!--标题头部-->
+    <div class="title">
+        <div id="M_PC_top_nav,#M_PC_top_nav_container">
+            <div id="M_PC_top_nav_container">
+                <div class="inner">
+                    <ul>
+                        <li class="go-home fl">
+                            <a href="index.html">
+                                <em class="home"></em>美丽说首页</a>
+                        </li>
+                        <li class="fr">
+                            <a href="http://xd.meilishuo.com" target="_blank" class="last">商家后台</a>
+                        </li>
+                        <li class="drop fr">
+                            <a target="_blank">帮助中心
+                                <em class="arrow"></em>
+                            </a>
+                            <ul class="down">
+                                <li>
+                                    <a href="http://www.meilishuo.com/helpcenter/buyerService/" target="_blank">买家服务</a>
+                                </li>
+                                <li>
+                                    <a href="http://service.meilishuo.com/" target="_blank">商家服务</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.meilishuo.com/helpcenter/ruleCenter/" target="_blank">规则中心</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="fr">
+                            <a href="all_orderForm.html" target="_blank" data-ptp-cache-id="1.zfrD1b.0.0.B6rzP">
+                                <em class="order"></em>我的订单</a>
+                        </li>
+                        <li class="drop cart-wrapper fr">
+                            <a target="_blank" href="addCar.html" class="my-cart">
+                                <em class="cart"></em>我的购物车 </a>
+                        </li>
+                        <li class="drop fr">
+                            <a href="collection.html" target="_blank">
+                                <em class="collect"></em>我的收藏 </a>
+                            <ul class="down">
+                                <li>
+                                    <a href="collection.html" target="_blank"> 收藏宝贝</a>
+                                </li>
+                                <li>
+                                    <a href="collection_shop.html" target="_blank"> 收藏店铺</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="drop fr">
+                            <a href="user_information.html" target="_blank">
+                                <i class=""></i>王小五 </a>
+                            <ul class="down">
+                                <li>
+                                    <a href="user_information.html" target="_blank"> 个人设置</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" target="_blank"> 退出</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="clear"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--logo页-->
+    <div class="body_logo">
+        <div class="pic_logo fl">
+            <a href="index.html">
+                <img src="https://s10.mogucdn.com/mlcdn/c45406/170608_4abia54942c229cgg69f073b9g23d_408x104.png" />
+            </a>
+        </div>
+        <div class="process fr">
+            <div class="process_repeat1">
+                <div class="process_repeat2">
+                </div>
+                <i class="number">
+                    1
+                    <span class="number-text red">
+                        购物车
+                    </span>
+                </i>
+                <i class="number">
+                    2
+                    <span class="number-text">
+                        确认订单
+                    </span>
+                </i>
+                <i class="number">
+                    3
+                    <span class="number-text">
+                        支付
+                    </span>
+                </i>
+                <i class="number">
+                    <img src="img/right.png">
+                    <span class="number-text">
+                        完成
+                    </span>
+                </i>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+    <div class="line1"></div>
+
+    <!--主体-->
+    <div class="container main-body">
+        <ul class="body_head">
+            <li>
+                <a href="##" class="allThing">
+                    全部商品(
+                    <span class="allNum">2</span>)
+                </a>
+            </li>
+            <li class="line2">|</li>
+            <li>
+                <a href="##" class="cutThing">
+                    优惠(
+                    <span class="cutNum">0</span>)
+                </a>
+            </li>
+            <li class="line2">|</li>
+            <li>
+                <a href="##" class="shortThing">
+                    库存紧张(
+                    <span class="shortNum">0</span>)
+                </a>
+            </li>
+            <li class="clear"></li>
+        </ul>
+        <!--商品显示-->
+        <div class="showThing">
+            <div class="main_show">
+                <!--表格-->
+                <table class="cart_table">
+                    <thead>
+                        <tr class="tr1">
+                            <th class="cart_head1">
+                                <input type="checkbox" name="allCheck" id="allCheck" value="" />
+                                <label for="allCheck">全选</label>
+                            </th>
+                            <th class="cart_head2">商品</th>
+                            <th class="cart_head3">商品信息</th>
+                            <th class="cart_head4">单价(元)</th>
+                            <th class="cart_head5">数量</th>
+                            <th class="cart_head6">小计(元)</th>
+                            <th class="cart_head7">操作</th>
+                        </tr>
+                        <tr class="tr2">
+                            <td class="cart_body1" colspan="7">
+                                <input type="checkbox" name="" id="house1" value="" />
+                                <label for="house1">店铺：
+                                </label>
+                                <a href="##">美丽优选</a>
+                                <a href="##" class="waiter">联系客服</a>
+                            </td>
+                        </tr>
+                        <tr class="appear">
+                            <td colspan="7">
+                                <div class="appear_text">
+                                    成功删除
+                                    <span class="del_num">1</span>款商品，如有误，可
+                                    <a href="##" class="reback">撤销本次删除</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="tr3">
+                            <td class="cart_head1">
+                                <input type="checkbox" name="product1" id="product1" value="" />
+                            </td>
+                            <td class="cart_table_goods">
+                                <div class="wrap_goods">
+                                    <a href="http://item.meilishuo.com/detail/1h6ndku" class="cart_goods_img">
+                                        <img class="cartImgTip" src="http://s3.mogucdn.com/p2/170316/upload_557g067h5k6039c13gc2eabkdj4j0_640x900.jpg_100x100.jpg">
+                                        <span>
+                                            韩版新款破洞宽松口袋装饰牛仔外套
+                                        </span>
+                                    </a>
+                                    <span>美美豆大回馈单件最高再抵5.00元</span>
+                                </div>
+                            </td>
+                            <td class="cart_head3">
+                                <div class="goods_color">
+                                    颜色：浅蓝
+                                </div>
+                                <div class="goods_size">
+                                    尺码：M
+                                </div>
+                            </td>
+                            <td class="cart_head4">
+                                <div class="goods_price">
+                                    <strong>118.0</strong>
+                                </div>
+                            </td>
+                            <td class="cart_head5">
+                                <div class="add_del">
+                                    <span class="delnum"></span>
+                                    <input type="text" name="goods_num" id="
+											" value="2" class="goods_num" />
+                                    <span class="addnum"></span>
+                                </div>
+                            </td>
+                            <td class="cart_head6">
+                                <div class="goods_price_all">
+                                    236.00
+                                </div>
+                            </td>
+                            <td class="cart_head7">
+                                <a href="##">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="tr3">
+                            <td class="cart_head1">
+                                <input type="checkbox" name="product1" id="product1" value="" />
+                            </td>
+                            <td class="cart_table_goods">
+                                <div class="wrap_goods">
+                                    <a href="http://item.meilishuo.com/detail/1h6ndku" class="cart_goods_img">
+                                        <img class="cartImgTip" src="img/upload_29c7b68372bhegkc993jl8dheh8g3_640x832.jpg_100x100.jpg">
+                                        <span>
+                                            夏季条纹女打底衫大码七分袖宽松韩版学生字母上衣短袖原宿风t恤
+                                        </span>
+                                    </a>
+                                    <span>美美豆大回馈单件最高再抵5.00元</span>
+                                </div>
+                            </td>
+                            <td class="cart_head3">
+                                <div class="goods_color">
+                                    颜色：黑色
+                                </div>
+                                <div class="goods_size">
+                                    尺码：L
+                                </div>
+                            </td>
+                            <td class="cart_head4">
+                                <div class="goods_price">
+                                    <strong>31.25</strong>
+                                </div>
+                            </td>
+                            <td class="cart_head5">
+                                <div class="add_del">
+                                    <span class="delnum"></span>
+                                    <input type="text" name="goods_num" id="" value="2" class="goods_num" />
+                                    <span class="addnum"></span>
+                                </div>
+                            </td>
+                            <td class="cart_head6">
+                                <div class="goods_price_all">
+                                    62.50
+                                </div>
+                            </td>
+                            <td class="cart_head7">
+                                <a href="##">删除</a>
+                            </td>
+                        </tr>
+
+                        <tr class="tr3">
+                            <td class="cart_head1">
+                                <input type="checkbox" name="product1" id="product1" value="" />
+                            </td>
+                            <td class="cart_table_goods">
+                                <div class="wrap_goods">
+                                    <a href="http://item.meilishuo.com/detail/1h6ndku" class="cart_goods_img">
+                                        <img class="cartImgTip" src="img/96990430_614bjjh184hbh67gg23568a899gfj_640x960.jpg_100x100.jpg">
+                                        <span>
+                                            时尚新款春季新品韩版时尚中长款学生宽松连帽套头卫衣女潮
+                                        </span>
+                                    </a>
+                                    <span>美美豆大回馈单件最高再抵5.00元</span>
+                                </div>
+                            </td>
+                            <td class="cart_head3">
+                                <div class="goods_color">
+                                    颜色：黑色
+                                </div>
+                                <div class="goods_size">
+                                    尺码：L
+                                </div>
+                            </td>
+                            <td class="cart_head4">
+                                <div class="goods_price">
+                                    <strong>31.25</strong>
+                                </div>
+                            </td>
+                            <td class="cart_head5">
+                                <div class="add_del">
+                                    <span class="delnum"></span>
+                                    <input type="text" name="goods_num" id="" value="2" class="goods_num" />
+                                    <span class="addnum"></span>
+                                </div>
+                            </td>
+                            <td class="cart_head6">
+                                <div class="goods_price_all">
+                                    62.50
+                                </div>
+                            </td>
+                            <td class="cart_head7">
+                                <a href="##">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="tr3">
+                            <td class="cart_head1">
+                                <input type="checkbox" name="product1" id="product1" value="" />
+                            </td>
+                            <td class="cart_table_goods">
+                                <div class="wrap_goods">
+                                    <a href="http://item.meilishuo.com/detail/1h6ndku" class="cart_goods_img">
+                                        <img class="cartImgTip" src="img/upload_46eie96lbhhja6khja4k4b2j2i88f_640x900.jpg_100x100.jpg">
+                                        <span>
+                                            2017 时尚百搭宽松不锁边廓袖oversize连帽卫衣女
+                                        </span>
+                                    </a>
+                                    <span>美美豆大回馈单件最高再抵5.00元</span>
+                                </div>
+                            </td>
+                            <td class="cart_head3">
+                                <div class="goods_color">
+                                    颜色：黑色
+                                </div>
+                                <div class="goods_size">
+                                    尺码：L
+                                </div>
+                            </td>
+                            <td class="cart_head4">
+                                <div class="goods_price">
+                                    <strong>31.25</strong>
+                                </div>
+                            </td>
+                            <td class="cart_head5">
+                                <div class="add_del">
+                                    <span class="delnum"></span>
+                                    <input type="text" name="goods_num" id="" value="2" class="goods_num" />
+                                    <span class="addnum"></span>
+                                </div>
+                            </td>
+                            <td class="cart_head6">
+                                <div class="goods_price_all">
+                                    62.50
+                                </div>
+                            </td>
+                            <td class="cart_head7">
+                                <a href="##">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="tr3">
+                            <td class="cart_head1">
+                                <input type="checkbox" name="product1" id="product1" value="" />
+                            </td>
+                            <td class="cart_table_goods">
+                                <div class="wrap_goods">
+                                    <a href="http://item.meilishuo.com/detail/1h6ndku" class="cart_goods_img">
+                                        <img class="cartImgTip" src="img/upload_3g86c633501ffi05kbk1b07a61593_640x900.jpg_100x100.jpg">
+                                        <span>
+                                            甜美小圆点波点蝴蝶结领系带百褶裙松紧腰显瘦雪纺连衣裙
+                                        </span>
+                                    </a>
+                                    <span>美美豆大回馈单件最高再抵5.00元</span>
+                                </div>
+                            </td>
+                            <td class="cart_head3">
+                                <div class="goods_color">
+                                    颜色：黑色
+                                </div>
+                                <div class="goods_size">
+                                    尺码：L
+                                </div>
+                            </td>
+                            <td class="cart_head4">
+                                <div class="goods_price">
+                                    <strong>31.25</strong>
+                                </div>
+                            </td>
+                            <td class="cart_head5">
+                                <div class="add_del">
+                                    <span class="delnum"></span>
+                                    <input type="text" name="goods_num" id="" value="2" class="goods_num" />
+                                    <span class="addnum"></span>
+                                </div>
+                            </td>
+                            <td class="cart_head6">
+                                <div class="goods_price_all">
+                                    62.50
+                                </div>
+                            </td>
+                            <td class="cart_head7">
+                                <a href="##">删除</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <!--结算-->
+            <div class="goods_buy">
+                <div class="buy_left fl">
+                    <input class="allCheck2" type="checkbox" name="" id="allCheck2" value="" />
+                    <label for="allCheck2">全选</label>
+                    <a href="##" class="del_goods">删除</a>
+                </div>
+                <div class="buy_right fr">
+                    <span class="foot_price">
+                        共有
+                        <span class="goods_number">0</span> 款商品，总计：
+                    </span>
+                    <span class="all_price">￥0.00</span>
+                    <span class="go_buy">
+                        <a href="##" class="pay">
+                            <img src="img/box.png" class="box" />
+                            <span class="box_text">请勾选商品</span>
+                        </a>
+                    </span>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <!--bottom-->
+            <div class="g-footer">
+                <p title="mofa015027">
+                    <a href="index.html" target="_blank">美丽说</a>
+                    © 2016 Meilishuo.com,All Rights Reserved.
+                </p>
+                <div class="icons">
+                    <a class="vs" href="##"></a>
+                    <a class="mc" href="##"></a>
+                    <a class="up" href="##"></a>
+                    <a class="pa" href="##" target="_blank"></a>
+                    <a class="kx" href="##" target="_blank"></a>
+                    <a class="pc" href="##" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--确认是否删除-->
+    <div class="bg2">
+    </div>
+    <div class="requred">
+        <div class="reque_head">
+            <span class="fl">提示</span>
+            <span class="xx fr trans3"></span>
+            <div class="clear"></div>
+        </div>
+        <div class="reque_body">
+            <div class="text_reque">
+                确定删除选中商品
+            </div>
+            <input type="button" name="" id="" value="确定" />
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //判断结算框位置
+        function panduan() {
+            $main_h = $(".main_show").offset().top + $(".main_show").outerHeight();
+            $h5 = Math.ceil($(".goods_buy").offset().top - $main_h);
+            if ($h5 < 0) {
+                $(".goods_buy").css("position", "fixed");
+            } else {
+                $(".goods_buy").css("position", "static");
+            }
+        }
+        $(window).on("scroll", function () {
+            $main_h = $(".main_show").offset().top + $(".main_show").outerHeight();
+            $h5 = Math.floor($(".goods_buy").offset().top - $main_h);
+            $h3 = $(document).scrollTop();
+            $tf = Math.floor($main_h - $h3 + $(".goods_buy").height() - $(window).height());
+            if ($tf <= -30) {
+                $(".goods_buy").css("position", "static");
+            } else if ($tf >= -29) {
+                $(".goods_buy").css("position", "fixed");
+            }
+
+        });
+        //价格
+        function sumprice() {
+            $sum = 0;
+            $oSpan = $("tbody input[type='checkbox']:checked").parent("td").siblings("td").find(".goods_price_all");
+            $.each($oSpan, function (i, item) {
+                $sum += parseFloat($(this)[0].textContent);
+            });
+            $(".all_price").text("￥" + $sum.toFixed(2));
+        }
+        //判断是否全选
+        function isAllcheck() {
+            $numCheck = $("tbody input[type='checkbox']:checked").length;
+            if ($numCheck != 0) {
+                $(".pay").css("background", "url(http://s18.mogucdn.com/p1/151012/upload_ieywkzbzgq4wgmjtgqzdambqmeyde_360x900.png) 0 -216px no-repeat")
+            } else {
+                $(".pay").css("background", "url(http://s21.mogujie.com/pic/150511/1blhwf_ie2tiobvhfrdkojrgezdambqhayde_360x900.png) 0 -800px no-repeat")
+            }
+            $num = $("tbody input[type='checkbox']").length;
+            $(".allNum").text($num);
+            $(".goods_number").text($numCheck);
+            if ($num == 0) {
+                $(".tr2").css("display", "none");
+            } else {
+                $(".tr2").css("display", "table-row");
+            }
+            if ($numCheck == $num && $numCheck != 0) {
+                $("#allCheck").prop("checked", true);
+                $("#allCheck2").prop("checked", true);
+                $("#house1").prop("checked", true);
+            } else {
+                $("#allCheck").prop("checked", false);
+                $("#allCheck2").prop("checked", false);
+                $("#house1").prop("checked", false);
+            }
+            sumprice();
+        }
+
+        isAllcheck();
+        //点击付款
+        $(".pay").click(function () {
+            $numCheck = $("tbody input[type='checkbox']:checked").length;
+            obj = $("tbody input[type='checkbox']:checked").parents("tr");
+            if ($numCheck == 0) {
+                $(".box").css("display", "block");
+                $(".box_text").css("display", "block");
+                $(".goods_buy").hover(
+                    function () { },
+                    function () {
+                        $(".box").css("display", "none");
+                        $(".box_text").css("display", "none");
+                    })
+            } else {
+                $(".pay").attr("href", "requred.html")
+            }
+
+        })
+        //点击全选
+        $("#allCheck").click(function () {
+            $("tbody input[type='checkbox']").prop("checked", $("#allCheck").prop("checked"));
+            $("#allCheck2").prop("checked", $("#allCheck").prop("checked"));
+            $("#house1").prop("checked", $("#allCheck").prop("checked"));
+            sumprice();
+            isAllcheck();
+        })
+        $("#allCheck2").click(function () {
+            $("tbody input[type='checkbox']").prop("checked", $("#allCheck2").prop("checked"));
+            $("#allCheck").prop("checked", $("#allCheck2").prop("checked"));
+            $("#house1").prop("checked", $("#allCheck2").prop("checked"));
+            sumprice();
+            isAllcheck();
+        })
+        $("#house1").click(function () {
+            $("tbody input[type='checkbox']").prop("checked", $("#house1").prop("checked"));
+            $("#allCheck").prop("checked", $("#house1").prop("checked"));
+            $("#allCheck2").prop("checked", $("#house1").prop("checked"));
+            sumprice();
+            isAllcheck();
+        })
+        //点击选择
+        $("tbody").on("click", "input[type='checkbox']", function (i, item) {
+            isAllcheck();
+        })
+        //删除_右
+        $prati = 0;
+        $("tbody").on("click", ".cart_head7", function (i, item) {
+            $index = $(this).parents("tr").index();
+            $tep = $(this).parents("tr").detach();
+            $(".appear").css("display", "table-row");
+            isAllcheck();
+            $(".del_num").text(1);
+            isAllcheck();
+            panduan();
+            $prati = 1;
+        })
+        //删除选中
+        $(".del_goods").click(function () {
+            $del_num = $("tbody input[type='checkbox']:checked").length;
+            //删除弹出窗
+            $(".bg2").css("width", $(document.body).width()).css("display", "block");
+            $(".bg2").css("height", $(document.body).height());
+            $(".requred").css("display", "block");
+            $(".xx").click(function () {
+                $(".bg2,.requred").css("display", "none");
+            })
+            isAllcheck();
+
+        })
+        //点击确定删除
+        $(".reque_body input").click(function () {
+            $arr = [];
+            $.each($("tbody input[type='checkbox']:checked"), function (i, item) {
+                $arr.push($(this).parents("tr").index());
+            });
+            $len = $arr.length;
+            $warp = $("tbody input[type='checkbox']:checked").parents("tr").detach();
+            $(".requred").css("display", "none");
+            $(".bg2").css("display", "none");
+            $(".del_num").text($del_num);
+            $(".appear").css("display", "table-row");
+            isAllcheck();
+            panduan();
+            $prati = 0;
+            return;
+        })
+        //撤销删除
+        $(".reback").click(function () {
+            if ($prati == 1) {
+                $(".reback").click(function () {
+                    if ($index - 1 == -1) {
+                        $("tbody").prepend($tep);
+                    } else {
+                        $tep1 = $("tbody tr").eq($index - 1);
+                        $tep.insertAfter($tep1);
+                    }
+                    isAllcheck();
+                    panduan();
+                    $(".appear").css("display", "none");
+                })
+            } else {
+                $.each($warp, function (i, item) {
+                    if ($arr[i] - 1 == -1) {
+                        $("tbody").prepend($warp.eq($len - 1 - i));
+                    } else {
+                        $tep1 = $("tbody tr").eq($arr[i] - 1);
+                        $warp.eq($len - 1 - i).insertAfter($tep1);
+                    }
+
+                });
+                isAllcheck();
+                panduan();
+
+                $(".appear").css("display", "none");
+            }
+            return;
+        })
+
+        //修改数量
+        $.each($("tbody .cart_head5"), function () {
+            $Mun = $(this).find(".delnum").parent().find(".goods_num").val();
+            $(this).find(".delnum").click(function () {
+                $number = $(this).siblings(".goods_num").val();
+                if ($number == 1) {
+                    $(this).css("cursor", "not-allowed");
+                } else {
+                    $number--;
+                    $(this).siblings(".goods_num").val($number);
+                }
+                $now_price = $(this).parents("td").siblings("td").find(".goods_price").text() * $number;
+                $(this).parents("td").siblings("td").find(".goods_price_all").text($now_price.toFixed(2));
+                isAllcheck();
+                $Mun = $(this).parent().find(".goods_num").val();
+            });
+            $(this).find(".addnum").click(function () {
+                $number = $(this).siblings(".goods_num").val();
+                $number++;
+                $(this).siblings(".goods_num").val($number);
+                $now_price = $(this).parents("td").siblings("td").find(".goods_price").text() * $number;
+                $(this).parents("td").siblings("td").find(".goods_price_all").text($now_price.toFixed(2));
+                isAllcheck();
+                $Mun = $(this).parent().find(".goods_num").val();
+            });
+            $(this).find(".goods_num").blur(function () {
+                $number = $(this).val();
+                if ($number % 1 == 0 && $number > 0) {
+                    $(this).val($number);
+                    $Mun = $number;
+                } else {
+                    $(this).val($Mun);
+                }
+                $now_price = $(this).parents("td").siblings("td").find(".goods_price").text() * $(this).val();
+                $(this).parents("td").siblings("td").find(".goods_price_all").text($now_price.toFixed(2));
+                isAllcheck();
+
+            })
+        });
+
+    })
+</script>
+<!--添加head-->
+<script type="text/javascript">
+    $(".cartImgTip").addClass("trans3");
+</script>
+
+</html>

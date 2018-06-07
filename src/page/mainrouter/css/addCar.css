@@ -1,0 +1,569 @@
+@charset "utf-8";
+
+/*公共类*/
+
+body,
+html {
+	margin: 0;
+	background: #f4f4f4;
+	font-size: 14px;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.trans3 {
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+
+/*title*/
+
+.title {
+	height: 32px;
+}
+
+
+/*logo*/
+
+.body_logo {
+	width: 1200px;
+	margin: auto;
+}
+
+.pic_logo {
+	margin-top: 14px;
+}
+
+.body_logo img {
+	height: 38px;
+}
+
+.process {
+	margin-top: 21px;
+}
+
+.process_repeat1 {
+	width: 494px;
+	background: url(http://s18.mogucdn.com/p1/160106/upload_ie3wkzrtmrtdozdfguzdambqgayde_157x23.png) 0 0 repeat-x;
+	height: 23px;
+	position: relative;
+}
+
+.process_repeat2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90px;
+	background: url(http://s16.mogucdn.com/p1/160106/upload_ie4wcntcmntdozdfguzdambqgqyde_157x23.png) 23px 0 repeat-x;
+	height: 23px;
+}
+
+.number {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 23px;
+	height: 23px;
+	font: normal 14px/23px helvetica, tahoma, arial, sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+.number:nth-child(3) {
+	left: 157px;
+}
+
+.number:nth-child(4) {
+	left: 314px;
+}
+
+.number:nth-child(5) {
+	left: 471px;
+}
+
+.number:nth-child(5) img {
+	width: 23px;
+	height: 23px;
+}
+
+.number-text {
+	position: absolute;
+	top: 24px;
+	width: 100px;
+	height: 20px;
+	left: 50%;
+	margin-left: -50px;
+	font: normal 12px/20px helvetica, tahoma, arial, sans-serif;
+	color: #999;
+}
+
+.red {
+	color: #f46;
+}
+
+.line1 {
+	margin-top: 17px;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+
+
+/*主体*/
+
+.main-body {
+	padding-top: 30px;
+}
+
+.body_head {
+	display: inline-block;
+	padding-bottom: 20px!important;
+}
+
+.body_head li {
+	float: left;
+}
+
+.allThing {
+	padding: 5px 10px;
+	border: 1px solid #333;
+	background: #333;
+	color: #fff;
+	border-radius: 3px;
+	margin-right: 10px!important;
+}
+
+.allThing,
+.allThing span {
+	font: normal 14px helvetica, tahoma, arial, sans-serif;
+}
+
+.line2 {
+	height: 28px;
+	color: #ddd;
+	margin-right: 10px;
+}
+
+.cutThing,
+.shortThing {
+	display: block;
+	padding: 1px 11px;
+	color: #333;
+	border-radius: 3px;
+	margin-right: 10px!important;
+}
+
+
+/*商品显示*/
+
+.main_show {
+	background: #fff;
+	padding: 20px 26px;
+}
+
+.cart_table {
+	font-size: 12px;
+}
+
+.tr1 {
+	border-bottom: 1px solid #efefef;
+}
+
+.cart_table th {
+	padding: 15px 0;
+}
+
+.cart_table td {
+	vertical-align: top;
+}
+
+.cart_head1 {
+	width: 56px;
+}
+
+.cart_head1 input {
+	margin-right: 5px;
+}
+
+.cart_head2 {
+	width: 540px;
+	padding: 8px 10px;
+	text-align: center;
+}
+
+.cart_head3 {
+	width: 140px;
+}
+
+.cart_head5 {
+	width: 150px;
+	text-align: center;
+}
+
+.cart_head4 {
+	width: 70px;
+	text-align: center;
+}
+
+.cart_head6 {
+	width: 100px;
+	text-align: center;
+}
+
+.cart_head7 {
+	width: 80px;
+	text-align: center;
+}
+
+.cartImgTip:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.tr2 {
+	display: table-row;
+}
+
+.tr2 td {
+	padding: 32px 0 5px;
+	width: 1138px;
+}
+
+.appear {
+	display: table-row;
+	display: none;
+	border-top: 1px solid #efefef;
+}
+
+.reback {
+	text-decoration: underline;
+}
+
+.del_num {
+	color: red;
+}
+
+.appear td {
+	padding: 32px 0 5px;
+	width: 1138px;
+}
+
+.appear_text {
+	background: #f5f5f5;
+	color: #666;
+	margin: 20px 0;
+	padding-left: 32px;
+	height: 32px;
+	line-height: 32px;
+}
+
+.tr2 input {
+	margin-right: 5px;
+}
+
+.waiter {
+	background: url(https://s10.mogucdn.com/p1/150915/upload_iezggojsgfrwinlbgmzdambqmmyde_16x17.gif) no-repeat;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+.tr3 {
+	border-bottom: 1px solid #efefef;
+	border-top: 1px solid #efefef;
+}
+
+.tr3 td {
+	height: 136px;
+	vertical-align: middle;
+}
+
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.cart_goods_img img {
+	width: 78px;
+	height: 78px;
+}
+
+.cart_table_goods span {
+	color: #f13e3a;
+	font-size: 12px;
+	display: block;
+}
+
+.cart_goods_img span {
+	vertical-align: top;
+	color: #333;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.add_del {
+	position: relative;
+	width: 97px;
+	height: 27px;
+}
+
+.delnum {
+	position: absolute;
+	top: 0;
+	left: 27px;
+	cursor: pointer;
+	width: 27px;
+	height: 30px;
+	background: url(http://s21.mogujie.com/pic/150511/1blhwf_ie2tiobvhfrdkojrgezdambqhayde_360x900.png) 0 -180px no-repeat;
+}
+
+.goods_num {
+	position: absolute;
+	top: 0;
+	left: 54px;
+	width: 43px;
+	height: 12px;
+	line-height: 12px;
+	padding: 6px 0 7px;
+	border: 1px solid #ddd;
+	background: #fff;
+	text-align: center;
+	color: #333;
+}
+
+.addnum {
+	position: absolute;
+	top: 0;
+	right: -29px;
+	cursor: pointer;
+	width: 27px;
+	height: 30px;
+	background: url(http://s21.mogujie.com/pic/150511/1blhwf_ie2tiobvhfrdkojrgezdambqhayde_360x900.png) 0 -140px no-repeat;
+}
+
+.goods_price_all {
+	color: #f13e3a;
+	font-size: 16px;
+}
+
+
+/*结算*/
+
+.goods_buy {
+	background-color: #FFFFFF;
+	padding: 15px 0px 10px 28px;
+	border-top: 1px solid #e3dada;
+	font-size: 12px;
+	/*overflow: hidden;*/
+	width: 1173px;
+	position: fixed;
+	bottom: 0;
+}
+
+.goods_buy span {
+	vertical-align: middle;
+}
+
+.allCheck2 {
+	padding-right: 6px;
+}
+
+.del_goods {
+	margin: 0 6px;
+}
+
+.goods_number {
+	color: #f13e3a;
+}
+
+.all_price {
+	color: #f13e3a;
+	font-size: 26px;
+}
+
+.buy_left {
+	padding: 8px 0 0 0;
+}
+
+.go_buy {
+	width: 152px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+.pay {
+	position: absolute;
+	top: -18px;
+	right: 0;
+	width: 152px;
+	height: 51px;
+	background: #d8d8d8 url(http://s21.mogujie.com/pic/150511/1blhwf_ie2tiobvhfrdkojrgezdambqhayde_360x900.png) 0 -800px no-repeat;
+}
+
+.box{
+	position: absolute;
+	top: -60px;
+	right: 40px;
+	width: 139px;
+	height: 60px;
+	display: none;
+}
+.box_text{
+	position: absolute;
+	top: -45px;
+	right: 77px;
+	color: #000000;
+	display: none;
+}
+/*确认删除*/
+
+.bg2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: none;
+}
+
+.requred {
+	position: fixed;
+	display: none;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 213px;
+	margin-top: -106px;
+	margin-left: -200px;
+}
+
+.reque_head {
+	background-color: mintcream;
+	padding: 20px 10px;
+}
+
+.reque_body {
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+.xx {
+	background: url(https://s10.mogucdn.com/p1/150824/upload_ie2ggzjxhbtdcnjtgmzdambqgiyde_20x19.png) 0 0 no-repeat;
+	cursor: pointer;
+	width: 20px;
+	height: 19px;
+}
+
+.xx:hover {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.text_reque {
+	padding: 50px 0;
+}
+
+.reque_body input {
+	border: 0;
+	outline: 0;
+	color: #FFFFFF;
+	background-color: #f46;
+	width: 80px;
+	height: 30px;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+
+.wrap_goods a:hover span{
+	color: gold;
+	text-decoration: underline;
+}
+/*bottom*/
+
+.g-footer {
+	padding: 40px 0;
+	text-align: center
+}
+
+.g-footer,
+.g-footer a {
+	color: #999
+}
+
+.g-footer a:hover {
+	text-decoration: underline
+}
+
+.g-footer .icons {
+	padding-top: 16px;
+	height: 28px;
+	text-align: center
+}
+
+.g-footer .icons .kx,
+.g-footer .icons .mc,
+.g-footer .icons .pa,
+.g-footer .icons .pc,
+.g-footer .icons .up,
+.g-footer .icons .vs {
+	display: inline-block;
+	height: 28px;
+	vertical-align: top
+}
+
+.g-footer .icons .vs {
+	width: 80px;
+	background: url("http://www.mogujie.com/img/pay/split.png") 0 -50px no-repeat;
+}
+
+.g-footer .icons .mc {
+	width: 74px;
+	background: url("http://www.mogujie.com/img/pay/split.png") -90px -50px no-repeat;
+}
+
+.g-footer .icons .up {
+	width: 50px;
+	background: url("http://www.mogujie.com/img/pay/split.png") -178px -50px no-repeat;
+}
+
+.g-footer .icons .pa {
+	width: 164px;
+	vertical-align: top;
+	background: url("http://www.mogujie.com/img/pay/split.png") -240px -50px no-repeat
+}
+
+.g-footer .icons .kx {
+	width: 84px;
+	background: url("http://www.mogujie.com/img/pay/split.png") -400px -50px no-repeat
+}
+
+.g-footer .icons .pc {
+	width: 50px;
+	background: url("http://www.mogujie.com/img/pay/split.png") -486px -50px no-repeat
+}
